@@ -1,9 +1,5 @@
 package Model
 
-import (
-	"testing"
-)
-
 /*
 	TestGetRsvpList	Returns the user's RSVP list
 	TestRsvpAdd	Adds an event ID to the user's RSVP list

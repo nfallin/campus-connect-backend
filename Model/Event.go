@@ -2,7 +2,6 @@ package Model
 
 import (
 	"image"
-	// "image/png"
 	"time"
 )
 
@@ -16,28 +15,26 @@ type Event struct {
 	clubID    int
 }
 
-// events are constructed by users
-
-func (e *Event) getDateTime() time.Time {
+func (e *Event) GetDateTime() time.Time {
 	return e.dateTime
 }
 
-func (e *Event) getLocation() string {
+func (e *Event) GetLocation() string {
 	return e.location
 }
 
-func (e *Event) getPoster() image.Image {
+func (e *Event) GetPoster() image.Image {
 	return e.poster
 }
 
-func (e *Event) getAttendees() map[int]struct{} {
+func (e *Event) GetAttendees() map[int]struct{} {
 	return e.attendees
 }
 
-func (e *Event) getNumAttendees() int {
+func (e *Event) GetNumAttendees() int {
 	return len(e.attendees)
 }
 
-func (e *Event) getName() string {
+func (e *Event) GetName() string {
 	return e.name
 }

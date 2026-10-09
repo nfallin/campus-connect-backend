@@ -6,14 +6,14 @@ type Club struct {
 	id     int
 }
 
-func (c *Club) getEvents() map[int]*Event {
+func (c *Club) GetEvents() map[int]*Event {
 	return c.events
 }
 
-func (c *Club) addEvent(event *Event) {
+func (c *Club) AddEvent(event *Event) {
 	c.events[event.id] = event
 }
 
-func (c *Club) removeEvent(event *Event) {
+func (c *Club) RemoveEvent(event *Event) {
 	delete(c.events, event.id)
 }

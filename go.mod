@@ -1,4 +1,4 @@
-module golang_rest_api
+module campus_connect
 
 go 1.22.5
 
